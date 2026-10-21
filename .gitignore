@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+.vscode/
+
+# generated figures (re-create them with the scripts)
+figures/*
+!figures/.gitkeep
