@@ -21,7 +21,7 @@ DATA_DIR = ROOT / "data"
 FIG_DIR = ROOT / "figures"
 FIG_DIR.mkdir(exist_ok=True)
 
-RECOMPUTE = False  # True -> regenerate data/OU_propagator_error_dt*.dat
+RECOMPUTE = True
 SEED = 1
 
 # %% Additive OU process: parameters
