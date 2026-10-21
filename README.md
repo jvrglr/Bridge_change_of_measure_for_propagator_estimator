@@ -49,25 +49,6 @@ pip install -r requirements.txt
 
 Tested with Python 3.13, NumPy 2.5, SciPy 1.18, Matplotlib 3.11 and Numba 0.68.
 
-## Usage
-
-Run any script from the repository root (or from anywhere; paths are resolved relative to the script):
-
-```bash
-python scripts/fig2_CIR_propagator.py
-```
-
-or generate all figures at once:
-
-```bash
-for s in scripts/fig*.py; do python "$s"; done
-```
-
-Each script takes roughly one to two minutes on a laptop. The scripts are also split into `# %%` cells, so they can be run interactively in VS Code, Spyder or Jupyter.
-
-**Fig. 1** is drawn from the precomputed files in `data/` by default. To regenerate them, set `RECOMPUTE = True` at the top of `fig1_OU_propagator_error_vs_Nbridges.py` (this takes several minutes).
-
-**Randomness.** Every script fixes a seed (`SEED = 1`) through `Functions.set_seed`, which seeds both NumPy and Numba's internal generator. Re-running a script therefore gives identical output; the figures in the paper were produced without a fixed seed, so they match the regenerated ones up to Monte Carlo fluctuations.
 
 ## Citation
 
